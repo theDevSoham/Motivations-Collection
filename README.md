@@ -16,6 +16,6 @@ Copy and paste the below code at the end of the ```index.html``` file
 
 ```bash
 
-<div></div>
+<div>This is still to be created</div>
 
 ```
