@@ -44,7 +44,7 @@ A simple html page to place all the motivational quotes and prayers. Later this 
                     <div class="d-flex justify-content-between">
                         <span>by [contributor name]</span>
 
-                        <!-- if no author please remove this section -->
+                        <!-- if no author please provide the word "anonymus" in this section -->
                         <span>said by [author name]</span>
                     </div>
                 </article>
