@@ -67,3 +67,10 @@ git push origin [branch-name]
 ```
 
 7. Finally create a pull request.
+
+
+# Live Page
+
+The site is hosted at: [motivations]
+
+[motivations]: https://mark-42-max.github.io/Motivations-Collection/
