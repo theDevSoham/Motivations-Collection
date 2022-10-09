@@ -21,7 +21,7 @@ A simple html page to place all the motivational quotes and prayers. Later this 
 4. Copy and paste the below code at the end of the ```index.html``` file
 
 ```bash
-
+              <!-- start of [quote name] -->
              <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary" />
                     <a href="#" class="effect-lily tm-post-link tm-pt-60">
@@ -49,6 +49,7 @@ A simple html page to place all the motivational quotes and prayers. Later this 
                         <span>said by [author name]</span>
                     </div>
                 </article>
+                <!-- end of [quote name] -->
 
 ```
 
