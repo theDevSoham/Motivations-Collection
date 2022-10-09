@@ -12,10 +12,57 @@ A simple html page to place all the motivational quotes and prayers. Later this 
 
 # How to contribute
 
-Copy and paste the below code at the end of the ```index.html``` file
+1. Fork the repository
+
+2. Clone and Open it in a choice of editor. Then create a branch in which you'll commit.
+
+3. Upload the topic specific image of your favourite quote
+
+4. Copy and paste the below code at the end of the ```index.html``` file
 
 ```bash
 
-<div>This is still to be created</div>
+             <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary" />
+                    <a href="#" class="effect-lily tm-post-link tm-pt-60">
+                        <div class="tm-post-link-inner">
+                            <!-- Link the respective image here -->
+                            <img src="img/img-01.jpg" alt="Image" class="img-fluid" />
+                        </div>
+                        <span class="position-absolute tm-new-badge">New</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">
+                            [quote head]
+                        </h2>
+                    </a>
+                    <p class="tm-pt-30">
+                        [explanation]
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">[Genre]</span>
+                        <span class="tm-color-primary">[Date]</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                        <span>by [contributor name]</span>
+
+                        <!-- if no author please remove this section -->
+                        <span>said by [author name]</span>
+                    </div>
+                </article>
 
 ```
+
+
+5. Link the image you uploaded and fill the sections accordingly
+
+6. On completion, in the terminal put the following commands:
+
+```bash
+git add .
+
+git commit -m "[quote name] contribution from [contributor name]"
+
+git push origin [branch-name]
+```
+
+7. Finally create a pull request.
