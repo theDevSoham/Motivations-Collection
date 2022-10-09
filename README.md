@@ -31,14 +31,13 @@ A simple html page to place all the motivational quotes and prayers. Later this 
                         </div>
                         <span class="position-absolute tm-new-badge">New</span>
                         <h2 class="tm-pt-30 tm-color-primary tm-post-title">
-                            [quote head]
+                            [quote]
                         </h2>
                     </a>
-                    <p class="tm-pt-30">
-                        [explanation]
-                    </p>
                     <div class="d-flex justify-content-between tm-pt-45">
+                        <!-- give genre as motivation for motivation and prayer for prayer -->
                         <span class="tm-color-primary">[Genre]</span>
+                        <!-- date format dd/mm/yyyy -->
                         <span class="tm-color-primary">[Date]</span>
                     </div>
                     <hr />
