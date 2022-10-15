@@ -10,6 +10,15 @@ html {
 	overflow-x: hidden;
 }
 
+header{
+	background-color: #C8FFD4;
+}
+
+.mainHeading {
+	margin: 0;
+	text-align: center;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -109,7 +118,7 @@ hr {
 }
 
 .tm-main {
-	margin-left: 400px;
+	margin: auto;
 	padding: 80px 100px 25px;
 }
 
@@ -590,7 +599,7 @@ a:hover figcaption {
 	}
 
 	.tm-main {
-		margin-left: 320px;
+		margin: auto;
 		width: calc(100% - 320px);
 	}
 }
@@ -658,7 +667,7 @@ a:hover figcaption {
 	}
 
 	.tm-main {
-		margin-left: 0;
+		margin: auto;
 		padding: 50px 40px;
 		width: 100%;
 	}
@@ -794,3 +803,4 @@ a:hover figcaption {
 		max-width: 120px;
 	}
 }
+
