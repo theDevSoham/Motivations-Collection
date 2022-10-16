@@ -4,7 +4,13 @@ A simple html page to place all the motivational quotes and prayers. Later this 
 
 # Contributors
 
+<!-- Copy-paste in your Readme.md file -->
 
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=Mark-42-max/Motivations-Collection"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
 
 # Purpose of this repo
 
