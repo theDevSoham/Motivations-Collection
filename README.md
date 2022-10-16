@@ -11,6 +11,7 @@ A simple html page to place all the motivational quotes and prayers. Later this 
 3. Later this will be stylised and converted to a proper website, with a proper hosting and a backend where users will be able to upload their own motivational quotes.
 
 # How to contribute
+### Note: Please don't create any issue for contribution. Follow along the next steps for contribution. If any problem arises then only an issue should be created.
 
 1. Fork the repository
 
