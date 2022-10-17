@@ -4,7 +4,7 @@ A simple html page to place all the motivational quotes and prayers. Later this 
 
 # Contributors
 
-[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
+[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/Mark-42-max/Motivations-Collection/graphs/contributors)
 
 # Purpose of this repo
 
