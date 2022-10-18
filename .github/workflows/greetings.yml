@@ -1,0 +1,15 @@
+name: Greetings
+
+on: [pull_request_target]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        pr-message: "Hello! Welcome to the Motivations-Collection repository. You've successfully created your pull request. Your code is set to be reviewed by the owner. Sit tight and if your PR looks good enough, it will be merged in no time. Else the owner will contact shortly. Happy contributing ✨"
