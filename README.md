@@ -78,6 +78,8 @@ git push origin [branch-name]
 
 7. Finally create a pull request.
 
+## Please note: Check before pull request, if your fork is not updated with this repository, please update and then send pull request. You can check for updates if the fork shows ``` x ``` commits behind main, then sync and update fork. (x => 1,2,3....)
+
 
 # Live Page
 
