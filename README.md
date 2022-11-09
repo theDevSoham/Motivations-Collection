@@ -2,6 +2,8 @@
 
 A simple html page to place all the motivational quotes and prayers. Later this will be designed properly with a proper backend.
 
+## Important update: This repository is not currently accepting any contributions for hacktoberfest.
+
 # Contributors
 
 <!-- Copy-paste in your Readme.md file -->
