@@ -1,0 +1,23 @@
+---
+import Home from "../layouts/Home.astro";
+import Card from "../components/Card.astro";
+
+const posts = await Astro.glob("../posts/*.md");
+---
+
+<Home>
+  <div class="container-fluid">
+    <main class="tm-main">
+      <div class="row tm-row">
+        {posts.map(post => <Card
+			imagePath={post.frontmatter.image}
+			quote={post.frontmatter.quote}
+			genre={post.frontmatter.genre}
+			date={post.frontmatter.date}
+			contributor={post.frontmatter.contributor}
+			speaker={post.frontmatter.author}
+		  />)}
+      </div>
+    </main>
+  </div>
+</Home>
