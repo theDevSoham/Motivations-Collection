@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "motivations_collection",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -16,5 +16,10 @@
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "husky": "^8.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
   }
 }
