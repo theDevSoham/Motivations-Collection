@@ -22,7 +22,7 @@ const allPages = [...Array(lastPage).keys()].map((i) => i + 1);
 						"page-item" + (item === currentPage ? " active" : "")
 					}
 				>
-					<a class="page-link" href={`/${item}`}>
+					<a class="page-link" href={`./${item !== 1 ? item : ""}`}>
 						{item} <span class="sr-only">(current)</span>
 					</a>
 				</li>
