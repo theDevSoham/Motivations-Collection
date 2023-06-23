@@ -1,0 +1,53 @@
+---
+import Home from "../layouts/Home.astro";
+import Card from "../components/Card.astro";
+import Paginate from "../components/Paginate.astro";
+
+export const getStaticPaths = async ({ paginate }: any) => {
+	const posts = await Astro.glob("../posts/*.md");
+
+	const sorted = posts.sort((a, b) => {
+		const aDate = new Date(
+			a.frontmatter.date.split("/").reverse().join("-")
+		);
+		const bDate = new Date(
+			b.frontmatter.date.split("/").reverse().join("-")
+		);
+
+		return (aDate as any) - (bDate as any);
+	});
+
+	return paginate(sorted, {
+		pageSize: 4,
+	});
+};
+
+const { page } = Astro.props;
+---
+
+<Home>
+	<div class="container-fluid">
+		<main class="tm-main">
+			<Paginate
+				prevUrl={page.url?.prev}
+				nextUrl={page.url?.next}
+				lastPage={page.lastPage}
+				currentPage={page.currentPage}
+			/>
+			<div class="row tm-row">
+				{
+					page.data.map((post: any) => (
+						<Card
+							imagePath={post.frontmatter.image}
+							quote={post.frontmatter.quote}
+							genre={post.frontmatter.genre}
+							date={post.frontmatter.date}
+							contributor={post.frontmatter.contributor}
+							speaker={post.frontmatter.author}
+						/>
+					))
+				}
+			</div>
+		</main>
+	</div>
+</Home>

@@ -1,0 +1,35 @@
+---
+export interface Props {
+	prevUrl?: string;
+	nextUrl?: string;
+	lastPage: number;
+	currentPage: number;
+}
+
+const { prevUrl, nextUrl, lastPage, currentPage } = Astro.props as Props;
+const allPages = [...Array(lastPage).keys()].map((i) => i + 1);
+---
+
+<nav aria-label="...">
+	<ul class="pagination">
+		<li class={"page-item" + (prevUrl ? "" : " disabled")}>
+			<a class="page-link" href={prevUrl} tabindex="-1">Previous</a>
+		</li>
+		{
+			allPages.map((item) => (
+				<li
+					class={
+						"page-item" + (item === currentPage ? " active" : "")
+					}
+				>
+					<a class="page-link" href={`/${item}`}>
+						{item} <span class="sr-only">(current)</span>
+					</a>
+				</li>
+			))
+		}
+		<li class={"page-item" + (nextUrl ? "" : " disabled")}>
+			<a class="page-link" href={nextUrl}>Next</a>
+		</li>
+	</ul>
+</nav>
