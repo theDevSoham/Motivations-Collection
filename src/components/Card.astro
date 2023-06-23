@@ -10,6 +10,8 @@ export interface Props {
 
 const { imagePath, quote, genre, date, contributor, speaker } =
   Astro.props as Props;
+
+const image = `${import.meta.env.BASE_URL}${imagePath}`;
 ---
 
 <!-- start of [quote name] -->
@@ -18,7 +20,7 @@ const { imagePath, quote, genre, date, contributor, speaker } =
   <a href="#" class="effect-lily tm-post-link tm-pt-60">
     <div class="tm-post-link-inner">
       <!-- Link the respective image here -->
-      <img src={"." + imagePath} alt="Image" class="img-fluid" />
+      <img src={image} alt="Image" class="img-fluid" />
     </div>
     <span class="position-absolute tm-new-badge">New</span>
     <h2 class="tm-pt-30 tm-color-primary tm-post-title">
