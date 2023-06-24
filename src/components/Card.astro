@@ -11,7 +11,7 @@ export interface Props {
 const { imagePath, quote, genre, date, contributor, speaker } =
   Astro.props as Props;
 
-const image = `./${imagePath}`;
+const image = `${import.meta.env.BASE_URL}${imagePath}`;
 ---
 
 <!-- start of [quote name] -->
