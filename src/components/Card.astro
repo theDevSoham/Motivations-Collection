@@ -11,7 +11,10 @@ export interface Props {
 const { imagePath, quote, genre, date, contributor, speaker } =
   Astro.props as Props;
 
-const image = `/${imagePath}`;
+import fs from "fs";
+
+const image = fs.readdirSync("public/img").find((file) => file.includes(imagePath));
+// const image = `/${imagePath}`;
 ---
 
 <!-- start of [quote name] -->
