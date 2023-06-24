@@ -6,12 +6,13 @@ export interface Props {
   date: `${number}${number}/${number}${number}/${number}${number}${number}${number}`;
   contributor: string;
   speaker: `${string} ${string}`;
+  currentPage: number;
 }
 
-const { imagePath, quote, genre, date, contributor, speaker } =
+const { imagePath, quote, genre, date, contributor, speaker, currentPage } =
   Astro.props as Props;
 
-const image = `./${imagePath}`;
+const image = currentPage === 1 ? `./${imagePath}` : `../${imagePath}`;
 ---
 
 <!-- start of [quote name] -->
