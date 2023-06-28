@@ -1,5 +1,5 @@
 ---
-image: "img/kingofsalem8-4.jpg"
+image: "/img/kingofsalem8-4.jpg"
 quote: "Keep a little fire burning; however small, however hidden."
 genre: "motivation"
 date: "09/10/2022"
