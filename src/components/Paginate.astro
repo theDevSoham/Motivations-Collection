@@ -13,7 +13,7 @@ const allPages = [...Array(lastPage).keys()].map((i) => i + 1);
 <nav aria-label="...">
 	<ul class="pagination">
 		<li class={"page-item" + (prevUrl ? "" : " disabled")}>
-			<a class="page-link" href={prevUrl} tabindex="-1">Previous</a>
+			<a class="page-link" href={`${import.meta.env.BASE_URL}${prevUrl}`} tabindex="-1">Previous</a>
 		</li>
 		{
 			allPages.map((item) => (
@@ -22,14 +22,14 @@ const allPages = [...Array(lastPage).keys()].map((i) => i + 1);
 						"page-item" + (item === currentPage ? " active" : "")
 					}
 				>
-					<a class="page-link" href={`/${item}`}>
+					<a class="page-link" href={`${import.meta.env.BASE_URL}${item !== 1 ? item : ""}`}>
 						{item} <span class="sr-only">(current)</span>
 					</a>
 				</li>
 			))
 		}
 		<li class={"page-item" + (nextUrl ? "" : " disabled")}>
-			<a class="page-link" href={nextUrl}>Next</a>
+			<a class="page-link" href={`${import.meta.env.BASE_URL}${nextUrl}`}>Next</a>
 		</li>
 	</ul>
 </nav>
